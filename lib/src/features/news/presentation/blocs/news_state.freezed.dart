@@ -18,9 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$NewsState {
   NewsDataState get newsState => throw _privateConstructorUsedError;
 
-  /// Create a copy of NewsState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $NewsStateCopyWith<NewsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,8 +43,6 @@ class _$NewsStateCopyWithImpl<$Res, $Val extends NewsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of NewsState
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -60,8 +56,6 @@ class _$NewsStateCopyWithImpl<$Res, $Val extends NewsState>
     ) as $Val);
   }
 
-  /// Create a copy of NewsState
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $NewsDataStateCopyWith<$Res> get newsState {
@@ -93,8 +87,6 @@ class __$$NewsStateImplCopyWithImpl<$Res>
       _$NewsStateImpl _value, $Res Function(_$NewsStateImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NewsState
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -135,9 +127,7 @@ class _$NewsStateImpl implements _NewsState {
   @override
   int get hashCode => Object.hash(runtimeType, newsState);
 
-  /// Create a copy of NewsState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NewsStateImplCopyWith<_$NewsStateImpl> get copyWith =>
@@ -149,11 +139,8 @@ abstract class _NewsState implements NewsState {
 
   @override
   NewsDataState get newsState;
-
-  /// Create a copy of NewsState
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NewsStateImplCopyWith<_$NewsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -228,9 +215,6 @@ class _$NewsDataStateCopyWithImpl<$Res, $Val extends NewsDataState>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -247,9 +231,6 @@ class __$$NewsDataInitialImplCopyWithImpl<$Res>
   __$$NewsDataInitialImplCopyWithImpl(
       _$NewsDataInitialImpl _value, $Res Function(_$NewsDataInitialImpl) _then)
       : super(_value, _then);
-
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -364,9 +345,6 @@ class __$$NewsDataLoadingImplCopyWithImpl<$Res>
   __$$NewsDataLoadingImplCopyWithImpl(
       _$NewsDataLoadingImpl _value, $Res Function(_$NewsDataLoadingImpl) _then)
       : super(_value, _then);
-
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -484,8 +462,6 @@ class __$$NewsDataFailureImplCopyWithImpl<$Res>
       _$NewsDataFailureImpl _value, $Res Function(_$NewsDataFailureImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -524,9 +500,7 @@ class _$NewsDataFailureImpl implements NewsDataFailure {
   @override
   int get hashCode => Object.hash(runtimeType, failure);
 
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NewsDataFailureImplCopyWith<_$NewsDataFailureImpl> get copyWith =>
@@ -612,10 +586,7 @@ abstract class NewsDataFailure implements NewsDataState {
   const factory NewsDataFailure(final Failure failure) = _$NewsDataFailureImpl;
 
   Failure get failure;
-
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NewsDataFailureImplCopyWith<_$NewsDataFailureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -638,8 +609,6 @@ class __$$NewsDataSuccessLoadedImplCopyWithImpl<$Res>
       $Res Function(_$NewsDataSuccessLoadedImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -684,9 +653,7 @@ class _$NewsDataSuccessLoadedImpl implements NewsDataSuccessLoaded {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_news));
 
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$NewsDataSuccessLoadedImplCopyWith<_$NewsDataSuccessLoadedImpl>
@@ -773,10 +740,7 @@ abstract class NewsDataSuccessLoaded implements NewsDataState {
       _$NewsDataSuccessLoadedImpl;
 
   List<News> get news;
-
-  /// Create a copy of NewsDataState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$NewsDataSuccessLoadedImplCopyWith<_$NewsDataSuccessLoadedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

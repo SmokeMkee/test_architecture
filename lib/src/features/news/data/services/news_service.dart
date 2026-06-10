@@ -19,7 +19,7 @@ class NewsService implements GetNewsBehavior {
     required int pageSize,
   }) async {
     try {
-      final result = await _newsSource.getNews(page, pageSize);
+      final result = await _newsSource.getNews(page, 1000);
 
       return SuccessResult(result.toModel());
     } on DioException catch (e) {
